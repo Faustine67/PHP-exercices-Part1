@@ -4,7 +4,7 @@
 <p> Ecrire un algorithme qui renvoie la table de multiplication d'un nombre passé en paramètre <br>
 Proposer 2 solutions avec 2 types de boucles <br>
 
-<h2>Résultat</h2>
+<h2> Methode 1 </h2>
 
 <?php
 
@@ -20,5 +20,9 @@ for($i = 1; $i <= 10; $i++) {
 }
 
 
+?>
+<html>
 
+<h2> Methode 2 </h2>
 
+<?php
