@@ -16,19 +16,50 @@ affiche à un utilisateur un rendu de monnaie en nombre de billets de 10 € et 
 
 <?php
 
-$montantapayer = 152 ;
-$montantverse = 200 ;
+$montantapayer = 45 ;
+$montantverse = 52 ;
 $resteapayer =  $montantverse - $montantapayer ;
 
 echo $montantapayer ."<br>" ; 
 echo $montantverse ."<br>" ; 
 echo $resteapayer ."<br>"; 
 
-if($resteapayer >= 10 ) {
-    echo $resteapayer -  ;
-} elseif ($genre == "homme" && $age > 20 ) {
-    echo "imposable" ;
-} else{
-    echo "non imposable";
+$resteapayer10 = $resteapayer;
+$resteapayer5 = $resteapayer;
+$resteapayer2 = $resteapayer;
 
-?>
+if($resteapayer >= 10 ) {
+    $reste10 = $resteapayer/10 ;
+    echo $reste10 ."<br>";
+    $billet10= floor($reste10);
+    echo $billet10 ."<br>";
+    $resteapayer10= $resteapayer-($billet10*10);
+    echo "il faut rendre $billet10 billets de 10 €" ."<br>" ; 
+}
+
+if ($resteapayer10 >= 5){
+    $reste5 = $resteapayer10/5 ;
+    echo $reste5 ."<br>";
+    $billet5= floor($reste5);
+    echo $billet5 ."<br>";
+    $resteapayer5= $resteapayer10-($billet5*5);
+    echo "il faut rendre $billet5 billets de 5€" ."<br>";
+}
+
+if  ($resteapayer5 >= 2){
+    $reste2 = $resteapayer5/2 ;
+    echo $reste2 ."<br>";
+    $piece2= floor($reste2);
+    echo $piece2 ."<br>";
+    $resteapayer2= $resteapayer5-($piece2*2);
+    echo "il faut rendre $piece2 pieces de 2€" ."<br>";
+}
+
+if  ($resteapayer2 >= 1){
+    $reste1 = $resteapayer2/1 ;
+    echo $reste1 ."<br>";
+    $piece1= floor($reste1);
+    echo $piece1 ."<br>";
+    $resteapayer1= $resteapayer2-($piece1*1);
+    echo "il faut rendre $piece1 pieces de 1€" ."<br>";
+} 
