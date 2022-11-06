@@ -28,14 +28,4 @@ foreach ($array as $value)
    echo '<th style="border: 1px solid black;">'.$value.'</th>';
 echo'</tr></table>';
 
-
-
-// Ajout d'un élément (notez que la nouvelle clé est 5, et non 0).
-/*$array[] = 3;
-print_r($array);
-
-// Ré-indexation :
-$array = array_values($array);
-$array[] = 7;
-print_r($array);*/
 ?>
