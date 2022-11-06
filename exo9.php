@@ -13,8 +13,8 @@ Sinon, non imposable <br>
 
 <?php
 
-$genre = "femme";
-$age = 20;
+$genre = "homme";
+$age = 21;
 
 if($genre == "femme" && $age >= 18 && $age< 35 ) {
     echo "imposable" ;
