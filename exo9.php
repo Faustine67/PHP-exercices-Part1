@@ -16,7 +16,7 @@ Sinon, non imposable <br>
 $genre = "homme";
 $age = 21;
 
-if($genre == "femme" && $age >= 18 && $age< 35 ) {
+if($genre == "femme" && ($age >= 18 && $age <= 35 )) {
     echo "imposable" ;
 } elseif ($genre == "homme" && $age > 20 ) {
     echo "imposable" ;

@@ -16,8 +16,8 @@ affiche à un utilisateur un rendu de monnaie en nombre de billets de 10 € et 
 
 <?php
 
-$montantapayer = 45 ;
-$montantverse = 52 ;
+$montantapayer = 152 ;
+$montantverse = 200 ;
 $resteapayer =  $montantverse - $montantapayer ;
 
 echo $montantapayer ."<br>" ; 
