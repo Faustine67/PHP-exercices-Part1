@@ -11,3 +11,10 @@ Age de la personne : 33 ans 4 mois 4 jours
 <h2>Résultat</h2>
 
 <?php
+
+  $dateOfBirth = "17-01-1985";
+  $today = date("Y-m-d");
+  $diff = date_diff(date_create($dateOfBirth), date_create($today));
+  echo ' Your age is '.$diff->y ;
+
+?>
