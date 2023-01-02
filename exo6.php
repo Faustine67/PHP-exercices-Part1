@@ -15,8 +15,6 @@ $prixunitaire = 9.99;
 $quantite = 5;
 $tva = 0.2;
 
-// (9,99+(0.2*9.99))*5
-
 $montanttotal = ($prixunitaire +($tva  *$prixunitaire)) * $quantite;
 
 $montanttotal = round ($montanttotal, 1);
